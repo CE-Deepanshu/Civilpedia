@@ -70,10 +70,9 @@ To pass rigorous structural requirements on a civil engineering job site, an ide
 *   **Water Absorption Limit:** Must not absorb more than $20\%$ of its dry weight when immersed in clean water for 24 hours.
 *   **Crushing Strength:** Must possess a minimal compressive load limit greater than $10.5 \text{ N/mm}^2$ for premium structural implementations.
 
-## Manufacturing of Burnt Clay Bricks
-## Manufacturing Process of Bricks
-
-```mermaid
+## Manufacturing of Burnt Clay Brick
+<div class="mermaid">
+mermaid
 %%{init: {
   "theme": "base",
   "flowchart": {
@@ -163,4 +162,10 @@ flowchart TB
     class N,O1,O2,O3,P classification;
     class Q finalstage;
     class F,J decision;
-```
+</div>
+
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+  mermaid.initialize({ startOnLoad: true });
+</script>
+
