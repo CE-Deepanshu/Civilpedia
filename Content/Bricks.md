@@ -71,35 +71,13 @@ To pass rigorous structural requirements on a civil engineering job site, an ide
 *   **Crushing Strength:** Must possess a minimal compressive load limit greater than $10.5 \text{ N/mm}^2$ for premium structural implementations.
 
 ## Manufacturing of Burnt Clay Brick
-<div class="mermaid">
-mermaid
-%%{init: {
-  "theme": "base",
-  "flowchart": {
-    "useMaxWidth": true,
-    "htmlLabels": true,
-    "curve": "basis",
-    "nodeSpacing": 30,
-    "rankSpacing": 45
-  },
-  "themeVariables": {
-    "fontFamily": "Arial, sans-serif",
-    "fontSize": "15px",
-    "primaryTextColor": "#172033",
-    "lineColor": "#475569",
-    "background": "#ffffff"
-  }
-}}%%
-
-flowchart TB
-
+```mermaid
+flowchart TD
     A["Selection of Clay"]
-    B["Unsoiling<br/>Remove top 20–30 cm"]
-    C["Digging and Weathering<br/>Duration: 1–2 weeks"]
-    D["Blending and Tempering<br/>Add water, sand and additives"]
-    E["Pug Mill / Kneading<br/>Homogeneous plastic mass"]
-
-    A --> B --> C --> D --> E
+    A --> B["Unsoiling<br/>Remove top 20–30 cm"]
+    B --> C["Digging and Weathering<br/>1–2 weeks"]
+    C --> D["Blending and Tempering<br/>Add water, sand and additives"]
+    D --> E["Pug Mill or Kneading<br/>Homogeneous plastic mass"]
 
     E --> F{"Moulding"}
 
@@ -117,29 +95,29 @@ flowchart TB
     H1 --> I
     H2 --> I
 
-    I --> I1["Natural Drying<br/>Sunlight / Sheds"]
+    I --> I1["Natural Drying<br/>Sunlight or Sheds"]
     I --> I2["Artificial Drying<br/>Hot Air"]
 
     I1 --> J{"Burning"}
     I2 --> J
 
-    J --> K["Clamp Burning<br/>Temporary method<br/>Duration: 2–6 months"]
+    J --> K["Clamp Burning<br/>Temporary process<br/>2–6 months"]
 
-    J --> L["Kiln Burning<br/>Bull's Trench Kiln<br/>IS 13954 / IS 13955"]
+    J --> L["Kiln Burning<br/>Bull's Trench Kiln<br/>IS 13954 and IS 13955"]
 
     L --> L1["Loading Zone"]
-    L1 --> L2["Burning Zone<br/>Temperature: 700–1100 °C<br/>Optimum: 900–1000 °C"]
+    L1 --> L2["Burning Zone<br/>700–1100 °C<br/>Optimum: 900–1000 °C"]
     L2 --> L3["Cooling Zone<br/>Gradual cooling with incoming air"]
     L3 --> L4["Unloading Zone"]
 
-    K --> M["Slow Cooling"]
-    L4 --> M
+    L4 --> M["Slow Cooling"]
+    K --> M
 
     M --> N["Sorting and Classification<br/>As per IS 1077:1992"]
 
-    N --> O1["Class 1<br/>Strength ≥ 10 N/mm²"]
-    N --> O2["Class 2<br/>Strength ≥ 7 N/mm²"]
-    N --> O3["Class 3<br/>Strength ≥ 3.5 N/mm²"]
+    N --> O1["Class 1<br/>Compressive strength ≥ 10 N/mm²"]
+    N --> O2["Class 2<br/>Compressive strength ≥ 7 N/mm²"]
+    N --> O3["Class 3<br/>Compressive strength ≥ 3.5 N/mm²"]
 
     O1 --> P["Testing<br/>IS 3495 Parts 1–4"]
     O2 --> P
@@ -147,25 +125,16 @@ flowchart TB
 
     P --> Q["Storage and Dispatch"]
 
-    classDef preparation fill:#FFF4CC,stroke:#B7791F,stroke-width:2px,color:#172033;
-    classDef moulding fill:#DBEAFE,stroke:#2563EB,stroke-width:2px,color:#172033;
-    classDef drying fill:#DCFCE7,stroke:#15803D,stroke-width:2px,color:#172033;
-    classDef burning fill:#FEE2E2,stroke:#DC2626,stroke-width:2px,color:#172033;
-    classDef classification fill:#F3E8FF,stroke:#7E22CE,stroke-width:2px,color:#172033;
-    classDef finalstage fill:#E0F2FE,stroke:#0369A1,stroke-width:2px,color:#172033;
-    classDef decision fill:#FEF3C7,stroke:#D97706,stroke-width:3px,color:#172033;
+    %% Style Classes Definitions
+    classDef preparation fill:#fff4cc,stroke:#c58b00,stroke-width:2px,color:#222;
+    classDef moulding fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#222;
+    classDef drying fill:#dcfce7,stroke:#15803d,stroke-width:2px,color:#222;
+    classDef burning fill:#fee2e2,stroke:#dc2626,stroke-width:2px,color:#222;
+    classDef testing fill:#f3e8ff,stroke:#7e22ce,stroke-width:2px,color:#222;
 
+    %% Assigning Classes to Nodes
     class A,B,C,D,E preparation;
-    class G,H,G1,G2,H1,H2 moulding;
+    class F,G,H,G1,G2,H1,H2 moulding;
     class I,I1,I2 drying;
-    class K,L,L1,L2,L3,L4,M burning;
-    class N,O1,O2,O3,P classification;
-    class Q finalstage;
-    class F,J decision;
-</div>
-
-<script type="module">
-  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
-  mermaid.initialize({ startOnLoad: true });
-</script>
-
+    class J,K,L,L1,L2,L3,L4,M burning;
+    class N,O1,O2,O3,P,Q testing;
