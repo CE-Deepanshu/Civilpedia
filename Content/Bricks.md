@@ -72,74 +72,9 @@ To pass rigorous structural requirements on a civil engineering job site, an ide
 
 ## Manufacturing of Burnt Clay Brick
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-
-  <title>Manufacturing Process of Bricks</title>
-
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      padding: 24px;
-      background: #f4f7fa;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .diagram-container {
-      width: 100%;
-      max-width: 1500px;
-      margin: auto;
-      padding: 24px;
-      overflow-x: auto;
-      background: #ffffff;
-      border-radius: 16px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-    }
-
-    h1 {
-      margin-top: 0;
-      text-align: center;
-      color: #16324f;
-    }
-
-    .mermaid {
-      min-width: 900px;
-      text-align: center;
-    }
-
-    .error-message {
-      display: none;
-      padding: 16px;
-      color: #9b1c1c;
-      background: #fee2e2;
-      border-radius: 8px;
-    }
-  </style>
-</head>
-
-<body>
-
-  <main class="diagram-container">
-    <h1>Manufacturing Process of Bricks</h1>
-
-    <div id="mermaid-error" class="error-message">
-      The diagram could not be loaded. Please check your internet
-      connection or refresh the page.
-    </div>
-
-    <pre class="mermaid">
-flowchart TD
+<div class="diagram-container">
+  <pre class="mermaid">
+    flowchart TD
 
     A["Selection of Clay"]
     A --> B["Unsoiling<br/>Remove top 20–30 cm"]
@@ -192,46 +127,10 @@ flowchart TD
     O3 --> P
 
     P --> Q["Storage and Dispatch"]
+  </pre>
+</div>
 
-    classDef preparation fill:#fff4cc,stroke:#c58b00,stroke-width:2px,color:#222;
-    classDef moulding fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#222;
-    classDef drying fill:#dcfce7,stroke:#15803d,stroke-width:2px,color:#222;
-    classDef burning fill:#fee2e2,stroke:#dc2626,stroke-width:2px,color:#222;
-    classDef testing fill:#f3e8ff,stroke:#7e22ce,stroke-width:2px,color:#222;
-
-    class A,B,C,D,E preparation;
-    class F,G,H,G1,G2,H1,H2 moulding;
-    class I,I1,I2 drying;
-    class J,K,L,L1,L2,L3,L4,M burning;
-    class N,O1,O2,O3,P,Q testing;
-    </pre>
-  </main>
-
-  <script type="module">
-    import mermaid from
-      "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
-
-    try {
-      mermaid.initialize({
-        startOnLoad: false,
-        securityLevel: "loose",
-        theme: "default",
-        flowchart: {
-          htmlLabels: true,
-          useMaxWidth: true,
-          curve: "basis"
-        }
-      });
-
-      await mermaid.run({
-        querySelector: ".mermaid"
-      });
-    } catch (error) {
-      console.error("Mermaid rendering error:", error);
-
-      document.getElementById("mermaid-error").style.display = "block";
-    }
-  </script>
-
-</body>
-</html>
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+  mermaid.initialize({ startOnLoad: true, securityLevel: "loose", theme: "default" });
+</script>
