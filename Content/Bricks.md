@@ -69,3 +69,48 @@ To pass rigorous structural requirements on a civil engineering job site, an ide
 *   **Hardness Test:** No permanent scratch mark should remain on the surface when scratched with a fingernail.
 *   **Water Absorption Limit:** Must not absorb more than $20\%$ of its dry weight when immersed in clean water for 24 hours.
 *   **Crushing Strength:** Must possess a minimal compressive load limit greater than $10.5 \text{ N/mm}^2$ for premium structural implementations.
+
+## Manufacturing of Burnt Clay Bricks
+<div class="mermaid">
+flowchart TD
+    A[Selection of Clay]
+    A --> B[Unsoiling<br/>(remove top 20–30 cm)]
+    B --> C[Digging & Weathering<br/>(1–2 weeks)]
+    C --> D[Blending & Tempering<br/>(add water, sand, additives)]
+    D --> E[Pug Mill / Kneading<br/>(homogeneous plastic mass)]
+    
+    E --> F{Moulding}
+    F --> G[Hand Moulding]
+    F --> H[Machine Moulding]
+    G --> G1[Ground Moulding]
+    G --> G2[Table Moulding]
+    H --> H1[Wire‑cut Method]
+    H --> H2[Press‑mould Method]
+    
+    G1 & G2 & H1 & H2 --> I[Drying<br/>(3–10 days, 5–7% moisture)]
+    I --> I1[Sunlight / Sheds]
+    I --> I2[Artificial Hot Air]
+    
+    I1 & I2 --> J{Burning}
+    J --> K[Clamp Burning<br/>(temporary, 2–6 months)]
+    J --> L[Kiln Burning<br/>(Bull’s Trench Kiln)<br/>IS 13954 / 13955]
+    L --> L1[Loading Zone]
+    L1 --> L2[Burning Zone<br/>(700–1100°C, optimum 900–1000°C)]
+    L2 --> L3[Cooling Zone<br/>(gradual cooling with incoming air)]
+    L3 --> L4[Unloading Zone]
+    L4 --> M[Slow Cooling]
+    K --> M
+    
+    M --> N[Sorting as per IS 1077:1992]
+    N --> O1[Class 1 – ≥10 N/mm²]
+    N --> O2[Class 2 – ≥7 N/mm²]
+    N --> O3[Class 3 – ≥3.5 N/mm²]
+    
+    O1 & O2 & O3 --> P[Testing<br/>IS 3495 (Parts 1–4)]
+    P --> Q[Dispatch]
+</div>
+
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+  mermaid.initialize({ startOnLoad: true });
+</script>
