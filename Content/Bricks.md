@@ -72,7 +72,6 @@ To pass rigorous structural requirements on a civil engineering job site, an ide
 
 ## Manufacturing of Burnt Clay Brick
 
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
