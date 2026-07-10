@@ -127,6 +127,20 @@ To pass rigorous structural requirements on a civil engineering job site, an ide
     O3 --> P
 
     P --> Q["Storage and Dispatch"]
+
+    %% Colour definitions
+    classDef preparation fill:#fff4cc,stroke:#c58b00,stroke-width:2px,color:#222;
+    classDef moulding fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#222;
+    classDef drying fill:#dcfce7,stroke:#15803d,stroke-width:2px,color:#222;
+    classDef burning fill:#fee2e2,stroke:#dc2626,stroke-width:2px,color:#222;
+    classDef testing fill:#f3e8ff,stroke:#7e22ce,stroke-width:2px,color:#222;
+
+    %% Assign classes to nodes
+    class A,B,C,D,E preparation;
+    class F,G,H,G1,G2,H1,H2 moulding;
+    class I,I1,I2 drying;
+    class J,K,L,L1,L2,L3,L4,M burning;
+    class N,O1,O2,O3,P,Q testing;
   </pre>
 </div>
 
