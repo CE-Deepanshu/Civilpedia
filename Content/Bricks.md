@@ -35,9 +35,9 @@ Under Indian specifications, regular burnt-clay structural bricks are categorize
 
 | Class Designation (IS 1077) | Minimum Compressive Strength | Water Absorption (% dry weight) | General Field Description |
 | :--- | :--- | :--- | :--- |
-| **First Class**  | $\ge 35 \text{ N/mm}^2$ (~$350 \text{ kg/cm}^2$) | $< 20\%$ | Perfectly uniform, deep red, metallic ringing sound on impact. No visible flaws. |
-| **Second Class** | $15 \text{ to } 20 \text{ N/mm}^2$ | $< 22\%$ | Small superficial cracks allowed. Uniformly burnt; used for interior partition plastering. |
-| **Third Class** | $3.5 \text{ to } 7.5 \text{ N/mm}^2$ | $< 25\%$ | Under-burnt, dull brick-red color. Highly porous; restricted to temporary structures. |
+| **First Class**  | >=35 N/mm^2 (approx. 350 Kg/cm^21) | <20% | Perfectly uniform, deep red, metallic ringing sound on impact. No visible flaws. |
+| **Second Class** | 15 - 20 N/mm^2 (approx. 150 - 20 Kg/cm^2) | <22% | Small superficial cracks allowed. Uniformly burnt; used for interior partition plastering. |
+| **Third Class** | 3.5 - 7.5 N/mm^2 (approx. 35 - 75 Kg/cm^2)  | <25% | Under-burnt, dull brick-red color. Highly porous; restricted to temporary structures. |
 | **Fourth Class/ Jhama Bricks** | Variable / Over-burnt | Highly Irregular | Distorted shapes due to over-firing. Extremely hard; crushed to form aggregate for foundations. |
 
 ---
