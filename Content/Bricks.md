@@ -193,3 +193,4 @@ This is a straightforward test of a brick's structural integrity.
 This test, formalized in standards like ASTM C67, measures the suction of the brick, which affects its bond with mortar.
 - **Procedure**: It involves placing a dry brick on a shallow bed of water and measuring the weight of water absorbed over a short period, typically one minute.
 - **Interpretation**: This is critical for understanding how the brick will interact with mortar, as a very high IRA can pull water out of the mortar too quickly, weakening the bond.
+<img width="1536" height="1024" alt="29102ba6-e6f6-4963-95ca-d7bda596d786" src="https://github.com/user-attachments/assets/c0ef6d73-d1d0-4d56-98b2-71ec0cea9640" />
