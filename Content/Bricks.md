@@ -148,3 +148,48 @@ To pass rigorous structural requirements on a civil engineering job site, an ide
   import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
   mermaid.initialize({ startOnLoad: true, securityLevel: "loose", theme: "default" });
 </script>
+
+### 🔍 Common Field Tests for Bricks
+
+Here are the most common field tests, what they measure, and how to perform them:
+
+#### 1. Water Absorption Test
+This test measures a brick's porosity; a good brick should not absorb too much water.
+- **Procedure**: Weigh a dry brick (W1). Submerge it completely in water for 24 hours. Remove it, wipe it dry, and weigh it again (W2).
+- **Calculation**: `Water Absorption (%) = [(W2 - W1) / W1] * 100`.
+- **Interpretation**: A good quality brick typically absorbs less than 20% of its own weight in water.
+
+#### 2. Efflorescence Test
+This test checks for the presence of soluble salts in the brick, which can cause a white, powdery deposit on walls.
+- **Procedure**: Submerge a brick in fresh water for 24 hours. Remove it and allow it to dry completely in the shade.
+- **Interpretation**: Visually inspect the brick for a white or greyish deposit on its surface. The absence of such a deposit indicates good quality.
+
+#### 3. Soundness Test
+This simple test reveals the brick's firing quality and internal integrity.
+- **Procedure**: Strike two bricks against each other with moderate force.
+- **Interpretation**: A good brick produces a clear, metallic ringing sound. A dull thud indicates the brick is poorly fired or cracked.
+
+#### 4. Hardness Test
+This test evaluates the brick's resistance to scratching and abrasion.
+- **Procedure**: Scratch the surface of the brick with a hard object, such as a fingernail or a coin.
+- **Interpretation**: A good quality brick will be hard and resist scratching, leaving little to no impression.
+
+#### 5. Structure Test (or Fracture Test)
+This test identifies internal flaws not visible from the outside.
+- **Procedure**: Break a brick and examine its fractured surface.
+- **Interpretation**: The internal structure of a good brick should be uniform, dense, and free from large holes, cracks, or lumps.
+
+#### 6. Dimension Tolerance Test
+This test ensures the bricks are of a consistent size for proper bonding and uniform wall thickness.
+- **Procedure**: Arrange 20 bricks in a straight line, end to end. Measure the total length.
+- **Interpretation**: The total length should be within the permissible tolerance for the specified brick size. A significant variation indicates poor manufacturing quality.
+
+#### 7. Impact Test (or Drop Test)
+This is a straightforward test of a brick's structural integrity.
+- **Procedure**: Drop a brick from a height of about 1 meter (shoulder height) onto a hard surface.
+- **Interpretation**: A good brick should not break or crack upon impact.
+
+#### 8. Initial Rate of Absorption (IRA) Test
+This test, formalized in standards like ASTM C67, measures the suction of the brick, which affects its bond with mortar.
+- **Procedure**: It involves placing a dry brick on a shallow bed of water and measuring the weight of water absorbed over a short period, typically one minute.
+- **Interpretation**: This is critical for understanding how the brick will interact with mortar, as a very high IRA can pull water out of the mortar too quickly, weakening the bond.
